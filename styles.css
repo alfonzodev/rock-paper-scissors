@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #2e2e2e;
+    --accent-color-1: #b84444;
+    --accent-color-2: #4495b8;
+    --main-font: 'Figtree', sans-serif; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: var(--secondary-color);
+}
+
+header {
+    background: var(--primary-color);
+    padding: 10px 0;
+}
+
+header > h1 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-family: var(--main-font);
+    font-weight: 600;
+    
+}
+
+.scoreboard {
+    position: relative;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 15px auto 10px;
+    width: 300px;
+    height: 80px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    font-family: var(--main-font);
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.badge {
+    padding: 2px 5px;
+    width: 45px;
+    border-radius: 2px;
+    color: white;
+    font-family: var(--main-font);
+    font-size: 1rem;
+    
+}
+
+#user-badge {
+    background-color: var(--accent-color-2);
+    position: absolute;
+    top: 25px;
+    left: -20px;
+}
+
+#pc-badge {
+    background-color: var(--accent-color-1);
+    
+    position: absolute;
+    top: 25px;
+    right: -23px;
+
+}
+
+.container span {
+    background-color: rgba(142, 142, 142, 0.25);
+    font-family: var(--main-font);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.container #user-move {
+    border: 1px solid var(--accent-color-2);
+    border-radius: 10px;
+}
+
+.container #pc-move {
+    border: 1px solid var(--accent-color-1);
+    border-radius: 10px;
+}
+
+.result{
+    text-align: center;
+    height: 29px;
+    color: var(--primary-color);
+    margin: 40px 0;
+    
+}
+
+.result > p {
+    font-family: var(--main-font);
+    font-size: 1.5rem;
+    font-weight: 300;
+} 
+
+.choices {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.choice {
+    display: inline-block;
+    border: 3px solid var(--primary-color);
+    padding: 10px;
+    margin: 0 15px;
+    border-radius: 50%;
+    transition: all 0.1s ease-in;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.15);
+    transform: scale(1.05);
+}
+
+#action-message {
+    font-family: var(--main-font);
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* Utilities */
+.container {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 10px 0;
+    overflow: visible;
+    color: var(--primary-color);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
