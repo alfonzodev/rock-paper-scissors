@@ -113,7 +113,7 @@ header > h1 {
     padding: 10px;
     margin: 0 15px;
     border-radius: 50%;
-    transition: all 0.1s ease-in;
+    transition: all 0.1s ease;
 }
 
 .choice:hover {
@@ -127,6 +127,22 @@ header > h1 {
     font-size: 1.5rem;
     text-align: center;
     color: var(--primary-color);
+}
+
+@media(max-width: 500px){
+    .choice{
+        transition: none;
+    }
+
+    .choice:hover{
+        background-color: transparent;
+        transform: none;
+    }
+    .choice:active{
+        background-color: rgba(255,255,255,0.15);
+        transform: scale(1.05);
+    }
+
 }
 
 /* Utilities */
